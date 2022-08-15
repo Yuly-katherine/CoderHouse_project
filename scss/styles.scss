@@ -1,0 +1,118 @@
+//------------- Importaciones--------------//
+
+@import"variables";
+@import"header";
+@import"footer";
+
+
+//------------- Importaciones--------------//
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* menú */ 
+
+   
+/* imagen */ 
+
+.imagen{
+    background: url("https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/293734831_8017082851642779_5003281435803588287_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=diqpAk8IGn4AX8iCWDm&_nc_ht=scontent.feoh8-1.fna&oh=00_AT8D8_cueJvSwXkrAVnpNJCbDpnxPzCDuvQgqfbcLhRCVQ&oe=6300300E") center/cover;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.imagen__info{
+    padding:0.3rem;
+    position:absolute;
+    top: 150px;
+    right:15px;
+    text-align:right;
+    color: #fff;
+}
+
+.imagen__p{
+    font-size: 70px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+}
+
+.contenido{
+    font-family: 'Zilla Slab', serif;
+    padding-top:40px;
+    width: 80%;
+    margin: auto;
+}  
+
+/* contenido */ 
+
+.contenido__info{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contenido__info-text p{
+    text-align:justify;
+    padding: 20px 0px 20px 30px;
+}
+
+.contenido__info-card{
+    border: 1px gray solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.card__item{
+    margin: 20px 0;
+}
+
+.rojo{
+    display: inline-block;
+    margin-left: 1px;
+    color: #d00;
+}
+
+.gris{
+    display: inline-block;
+    margin-left: 1px;
+    color: gray;
+}
+
+.contenido__p {
+    padding: 10px 0;
+}
+
+.contenido__imagenes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido__imagenes img{
+    border: 2px solid #000;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height:200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* sección en construcción */
+
+.en-construccion{
+    width:80%;
+    margin: 0 auto;
+    padding-top:100px;
+}
+
+iframe{
+    margin-top:50px;
+}

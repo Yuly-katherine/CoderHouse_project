@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: $colorWhite;
+    z-index:999;
+}
+.container-fluid{
+    background-color: $colorWhite;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.nav-link{
+    font-size:$fontTitle;
+    &:hover{
+        color:$colorIcon;
+    }
+}
