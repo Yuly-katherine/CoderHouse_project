@@ -4,8 +4,7 @@
 @import"header";
 @import"footer";
 
-
-//------------- Importaciones--------------//
+/*------------ Reseteo------------ */ 
 
 *{
     margin: 0;
@@ -13,10 +12,9 @@
     box-sizing: border-box;
 }
 
-/* menú */ 
 
    
-/* imagen */ 
+/*------------ hero image------------ */ 
 
 .imagen{
     background: url("https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/293734831_8017082851642779_5003281435803588287_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=diqpAk8IGn4AX8iCWDm&_nc_ht=scontent.feoh8-1.fna&oh=00_AT8D8_cueJvSwXkrAVnpNJCbDpnxPzCDuvQgqfbcLhRCVQ&oe=6300300E") center/cover;
@@ -36,54 +34,81 @@
 }
 
 .imagen__p{
-    font-size: 70px;
-    font-family: 'Zilla Slab', serif;
+    font-size: 4rem;
+    font-family: $fontTitle;
     font-weight: bold;
 }
 
+@media(max-width:650px){
+    .imagen__p{
+        font-size: 3rem; 
+    }
+}
+
+/*------------ contenido Home ------------ */ 
+
 .contenido{
-    font-family: 'Zilla Slab', serif;
+    font-family: $fontTitle;
     padding-top:40px;
     width: 80%;
     margin: auto;
+    &__info{
+        margin-top:2rem;
+    }
+
+    &__info-text{
+        text-align:justify;
+        font-family: $fontLetters;
+    }
+    &__info-card{
+        border: 1px gray solid;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
+        padding: 20px;
+        margin-top: 20px;
+    }
 }  
 
-/* contenido */ 
-
-.contenido__info{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.contenido__info-text p{
-    text-align:justify;
-    padding: 20px 0px 20px 30px;
-}
-
-.contenido__info-card{
-    border: 1px gray solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
-    padding: 20px;
-    margin-top: 20px;
-
-}
 
 .card__item{
+    display: flex;
+    font-family: $fontLetters;
     margin: 20px 0;
 }
 
-.rojo{
-    display: inline-block;
-    margin-left: 1px;
-    color: #d00;
+.fecha{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__mes{
+    color: $colorRed;
+    font-weight: bold;
+   }
+   &__dia{
+    color: $colorBlack;
+    font-weight: bold;
+   }
 }
 
-.gris{
-    display: inline-block;
-    margin-left: 1px;
-    color: gray;
-}
+.evento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    &__lugar{
+        color: $colorBlack;
+        font-weight: bold;
+        align-self: flex-start;
+    }
+    &__fecha{
+     color: $colorGrey;
+     font-weight: bold;
+     align-self: flex-start;
+    }
+ }
+
+
+
 
 .contenido__p {
     padding: 10px 0;

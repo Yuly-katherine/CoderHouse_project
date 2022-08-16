@@ -14,9 +14,21 @@ header {
 .dropdown-toggle::after{
     display: none;
 }
+
+.dropdown-item{
+    font-size:$fontTitle;
+    margin:10px;
+    &:hover{
+        color:$colorWhite;
+        background-color: #198754;
+    }
+}
 .nav-link{
     font-size:$fontTitle;
+    margin-right: 20px;
+    transition: transform 0.2s;
     &:hover{
         color:$colorIcon;
+        transform: scale(1.1);
     }
 }
