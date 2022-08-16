@@ -58,8 +58,17 @@
         font-family: $fontLetters;
         width: 100%;
         h3{
+            font-family: $fontTitle;
             width: 95%;
             margin: 0 auto 2rem auto;
+        }
+    }
+    &__condiciones{
+        width: 95%;
+        margin:0 auto;
+        font-family: $fontLetters;
+        h2{
+            font-family: $fontTitle;
         }
     }
     &__p{

@@ -82,8 +82,15 @@ header {
     font-family: "Quicksand", sans-serif;
     width: 100%; }
     .contenido__map h3 {
+      font-family: "Zilla Slab", serif;
       width: 95%;
       margin: 0 auto 2rem auto; }
+  .contenido__condiciones {
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif; }
+    .contenido__condiciones h2 {
+      font-family: "Zilla Slab", serif; }
   .contenido__p {
     margin: 0; }
   .contenido__imagenes {
