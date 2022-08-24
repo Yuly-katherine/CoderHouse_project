@@ -1,0 +1,7 @@
+
+@mixin image-box($height, $width) {
+  height: $height;
+  width: $width;
+  object-fit: cover;
+  object-position: center;
+}

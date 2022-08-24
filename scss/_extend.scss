@@ -1,0 +1,21 @@
+///****Extends for flexbox****\\\\
+
+%flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
+%flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

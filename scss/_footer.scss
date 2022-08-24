@@ -3,31 +3,26 @@ footer{
     color: $colorWhite;
     width: 100%;
     height:120px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+    @extend %flex-row-center;
 }
 
 .footer-contain{
-    margin: 0 auto;
     &__copy{
         font-family: $fontLetters;
         text-align: center;
         margin-top:0.5rem;
     }
     &__social{ 
-        button{
+        text-align: center;
+        a{
             width:40px;
             height:40px;
             font-size: 1.5rem;
+            padding: 0.5rem;
             border-radius: 50%;
-            margin-left:40px;
+            margin-left:10px;
             text-align: center;
             background-color: inherit;
-            transition: all 0.5s;
-            &:hover{
-                transform: rotate(45deg);  
-            }
             &:nth-child(4) {
                 background-color: #1DB954;
                 color: #000;

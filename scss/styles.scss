@@ -1,8 +1,10 @@
 //------------- Importaciones--------------//
 
 @import"variables";
-@import"header";
+@import"mixin";
+@import"extend";
 @import"home";
+@import"header";
 @import"footer";
 
 /*------------ Reseteo------------ */ 
@@ -27,15 +29,13 @@ main{
 }
 
 .bg-image{
-    background: url("https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/295679174_8059259380758459_1510790771712869304_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=xBSRthOkZI4AX92i7C1&_nc_ht=scontent.feoh8-1.fna&oh=00_AT-kwSpelCpTK2Mev3eS31hJiRwQdCdVSr1dTXjb_SGSqQ&oe=62FF7D72") center/cover;
+    background: url("../img/home/fondo.jpg") center/cover;
     position: absolute;
     top:0;
     left:0;
     bottom:0;
     right:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-row-center;
     z-index: -1;
     opacity: 0.2;
 }
@@ -90,10 +90,7 @@ main{
             margin-left: 10px;
             margin-top: 10px;
             margin-bottom: 10px;
-            height:200px;
-            width: 200px;
-            object-fit: cover;
-            object-position: center;
+            @include image-box(200px, 200px);
             @media (max-width: 1050px) {
                 height:220px;
                 width: 220px;

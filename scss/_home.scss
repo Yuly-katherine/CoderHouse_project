@@ -1,11 +1,9 @@
 /*------------ hero image------------ */ 
 
 .imagen{
-    background: url("https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/293734831_8017082851642779_5003281435803588287_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=diqpAk8IGn4AX8iCWDm&_nc_ht=scontent.feoh8-1.fna&oh=00_AT8D8_cueJvSwXkrAVnpNJCbDpnxPzCDuvQgqfbcLhRCVQ&oe=6300300E") center/cover;
+    background: url("../img/home/heroImage.jpg") center/cover;
     height:100vh;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+    @extend %flex-row-center;
 }
 
 .imagen__info{
@@ -41,7 +39,12 @@
         width: 95%;
         margin:0 auto;
         text-align:justify;
-        font-family: $fontLetters;
+        h2{
+            font-family: $fontTitle;
+        }
+        p{
+            font-family: $fontLetters;
+        }
     }
     &__info-card{
         border: 1px gray solid;
@@ -49,15 +52,23 @@
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
         padding: 20px;
         margin-top: 20px;
+        font-family: $fontLetters;
+        h2{
+            font-family: $fontTitle;
+        }
     }
     &__viajes{
         width: 95%;
         margin:0 auto;
+        text-align:justify;
+        h2{
+            font-family: $fontTitle;
+        }
     }
     &__map{
         font-family: $fontLetters;
         width: 100%;
-        h3{
+        h2{
             font-family: $fontTitle;
             width: 95%;
             margin: 0 auto 2rem auto;
@@ -73,6 +84,7 @@
     }
     &__p{
         margin: 0;
+        font-size: $fontLetters;
     }
     &__imagenes{
         display:grid;
@@ -91,10 +103,7 @@
             margin-left: 10px;
             margin-top: 10px;
             margin-bottom: 40px;
-            height:250px;
-            width: 250px;
-            object-fit: cover;
-            object-position: center;
+            @include image-box(250px, 250px);
             @media (max-width: 640px) {
                 justify-self:center;
                 height:300px;
@@ -112,9 +121,7 @@
 }
 
 .fecha{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   @extend %flex-col-center;
    &__mes{
     color: $colorRed;
     font-weight: bold;
@@ -126,9 +133,7 @@
 }
 
 .evento{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-col-center;
     margin-left: 2rem;
     &__lugar{
         color: $colorBlack;
@@ -140,4 +145,14 @@
      font-weight: bold;
      align-self: flex-start;
     }
+ }
+
+ .accordion-button:not(.collapsed){
+    color: $colorBlack;
+    background-color:$colorWhite;
+    box-shadow: none;
+ }
+
+ .accordion-button:focus{
+    box-shadow: none;
  }
