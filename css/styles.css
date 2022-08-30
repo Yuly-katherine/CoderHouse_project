@@ -226,6 +226,72 @@ footer {
         height: 30px;
         font-size: 1rem; } }
 
+.page-not-found {
+  width: 50%;
+  margin: auto;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  color: #000; }
+  @media (min-width: 2000px) {
+    .page-not-found {
+      width: 40%; } }
+  @media (max-width: 840px) {
+    .page-not-found {
+      width: 60%; } }
+  @media (max-width: 720px) {
+    .page-not-found {
+      width: 70%; } }
+  @media (max-width: 610px) {
+    .page-not-found {
+      width: 80%; } }
+  @media (max-width: 515px) {
+    .page-not-found {
+      width: 100%; } }
+  @media (max-width: 450px) {
+    .page-not-found {
+      width: 80%; } }
+
+.page-not-found-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center; }
+
+.page-not-found-imagen {
+  background: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+  height: 420px;
+  width: 100%;
+  background-position: center; }
+
+.page-not-found-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px; }
+  .page-not-found-number__diferent {
+    color: #198754; }
+
+.page-not-found-text {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold; }
+
+.page-not-found-button {
+  font-size: 16px;
+  padding: 15px 45px;
+  margin: 20px 0px;
+  background-color: #198754;
+  border: none;
+  border-radius: 15px; }
+  .page-not-found-button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold; }
+  .page-not-found-button:hover {
+    background-color: #157147; }
+
 /*------------ Reseteo------------ */
 * {
   margin: 0;

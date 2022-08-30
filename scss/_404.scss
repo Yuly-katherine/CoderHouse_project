@@ -1,0 +1,71 @@
+.page-not-found {
+    width: 50%;
+    margin: auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fontLetters;
+    color:$colorBlack;
+    @media (min-width: 2000px) {
+      width: 40%;
+    }
+    @media (max-width: 840px) {
+      width: 60%;
+    }
+    @media (max-width: 720px) {
+      width: 70%;
+    }
+    @media (max-width: 610px) {
+      width: 80%;
+    }
+    @media (max-width: 515px) {
+      width: 100%;
+    }
+    @media (max-width: 450px) {
+      width: 80%;
+    }
+  }
+  .page-not-found-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .page-not-found-imagen {
+    background: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+    height: 420px;
+    width: 100%;
+    background-position: center;
+  }
+  .page-not-found-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    &__diferent {
+      color: $colorIcon;
+    }
+  }
+  .page-not-found-text {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .page-not-found-button {
+    // width: auto;
+    font-size: 16px;
+    padding: 15px 45px;
+    margin: 20px 0px;
+    background-color:$colorIcon;
+    border: none;
+    border-radius: 15px;
+    a{
+      text-decoration: none;
+      color:$colorWhite;
+      font-weight: bold;
+    }
+    &:hover{
+      background-color:darken($colorIcon, 5%)
+    }
+  }
+ 
