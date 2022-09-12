@@ -1,10 +1,10 @@
-.imagen, footer, .bg-image {
+.imagen, .imagen-contacto, .bg-image {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center; }
 
-.fecha, .evento {
+.fecha, .evento, .footer-contain {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,7 @@ header {
 
 /*------------ hero image------------ */
 .imagen {
-  background: url("../img/home/heroImage.jpg") center/cover;
+  background: url("../img/home/home.jpg") center/cover;
   height: 100vh; }
 
 .imagen__info {
@@ -29,7 +29,7 @@ header {
   color: #fff; }
 
 .imagen__p {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Zilla Slab", serif;
   font-weight: bold; }
 
@@ -79,6 +79,10 @@ header {
     font-family: "Quicksand", sans-serif; }
     .contenido__condiciones h2 {
       font-family: "Zilla Slab", serif; }
+  .contenido__formulario {
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Zilla Slab", serif; }
   .contenido__p {
     margin: 0;
     font-size: "Quicksand", sans-serif; }
@@ -178,15 +182,22 @@ header {
       margin-right: 0px; } }
 
 footer {
-  background-color: #000;
+  background-color: #198754;
   color: #fff;
   width: 100%;
-  height: 120px; }
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
-.footer-contain__copy {
+@media (max-width: 670px) {
+  .footer-logo {
+    display: none; } }
+
+.footer-contain__message {
   font-family: "Quicksand", sans-serif;
   text-align: center;
-  margin-top: 0.5rem; }
+  margin-top: 0.8rem; }
 
 .footer-contain__social {
   text-align: center; }
@@ -225,6 +236,60 @@ footer {
         width: 30px;
         height: 30px;
         font-size: 1rem; } }
+
+/*------------ hero image------------ */
+.imagen-contacto {
+  background: url("../img/contacto/tatacoa.jpg") center/cover;
+  height: 100vh; }
+
+.imagen-contacto__info {
+  padding: 0.3rem;
+  position: absolute;
+  top: 150px;
+  right: 15px;
+  text-align: right;
+  color: #fff; }
+
+.imagen-contacto__p {
+  font-size: 3rem;
+  font-family: "Zilla Slab", serif;
+  font-weight: bold; }
+
+/*------------ Formulario------------ */
+.nosotros {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .nosotros__info {
+    display: flex;
+    flex-direction: column;
+    width: 60%; }
+  .nosotros__label {
+    margin: 5px 0; }
+  .nosotros__input {
+    border-radius: 10px;
+    border: 1px solid #90949c;
+    height: 35px;
+    outline: none; }
+  .nosotros__textarea {
+    border-radius: 10px;
+    border: 1px solid #90949c;
+    outline: none; }
+  .nosotros__submit {
+    font-size: 16px;
+    padding: 15px 45px;
+    margin: 20px 0px;
+    background-color: #198754;
+    border: none;
+    border-radius: 15px;
+    color: #fff; }
+    .nosotros__submit:hover {
+      background-color: #157147; }
+
+.required {
+  color: #fa3e3e;
+  margin-left: 2px; }
 
 .page-not-found {
   width: 50%;
@@ -284,13 +349,14 @@ footer {
   margin: 20px 0px;
   background-color: #198754;
   border: none;
-  border-radius: 15px; }
+  border-radius: 15px;
+  color: #fff; }
+  .page-not-found-button:hover {
+    background-color: #157147; }
   .page-not-found-button a {
     text-decoration: none;
     color: #fff;
     font-weight: bold; }
-  .page-not-found-button:hover {
-    background-color: #157147; }
 
 /*------------ Reseteo------------ */
 * {

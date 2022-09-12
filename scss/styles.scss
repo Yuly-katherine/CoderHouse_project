@@ -1,11 +1,12 @@
 //------------- Importaciones--------------//
 
 @import"variables";
-@import"mixin";
 @import"extend";
+@import"mixin";
 @import"home";
 @import"header";
 @import"footer";
+@import"contacto";
 @import"404";
 /*------------ Reseteo------------ */ 
 
@@ -108,3 +109,4 @@ main{
         }
     }
 }
+

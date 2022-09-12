@@ -1,0 +1,49 @@
+/*------------ hero image------------ */ 
+
+.imagen-contacto{
+    @include hero-image("../img/contacto/tatacoa.jpg")
+}
+
+.imagen-contacto__info{
+    @include hero-image-info;
+}
+
+.imagen-contacto__p{
+    @include hero-image-p;
+}
+
+/*------------ Formulario------------ */ 
+
+.nosotros{
+    font-family: $fontLetters;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    &__info{
+        display:flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    &__label{
+        margin: 5px 0;
+    }
+    &__input{
+        border-radius: 10px;
+        border: 1px solid $colorGrey;
+        height: 35px;
+        outline: none;
+    }
+    &__textarea{
+        border-radius: 10px;
+        border: 1px solid $colorGrey;
+        outline: none;
+    }
+    &__submit{
+        @include styles-button;
+    }
+}
+
+.required{
+    color: $colorRed;
+    margin-left: 2px;
+}

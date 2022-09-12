@@ -1,24 +1,15 @@
 /*------------ hero image------------ */ 
 
 .imagen{
-    background: url("../img/home/heroImage.jpg") center/cover;
-    height:100vh;
-    @extend %flex-row-center;
+    @include hero-image("../img/home/home.jpg");
 }
 
 .imagen__info{
-    padding:0.3rem;
-    position:absolute;
-    top: 150px;
-    right:15px;
-    text-align:right;
-    color: #fff;
+    @include hero-image-info;
 }
 
 .imagen__p{
-    font-size: 4rem;
-    font-family: $fontTitle;
-    font-weight: bold;
+    @include hero-image-p;
 }
 
 /*------------ Contain------------ */   
@@ -81,6 +72,11 @@
         h2{
             font-family: $fontTitle;
         }
+    }
+    &__formulario{
+        width: 95%;
+        margin:0 auto;
+        font-family: $fontTitle;
     }
     &__p{
         margin: 0;

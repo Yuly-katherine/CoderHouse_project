@@ -5,3 +5,37 @@
   object-fit: cover;
   object-position: center;
 }
+
+@mixin hero-image($image){
+  background: url($image) center/cover;
+  height:100vh;
+  @extend %flex-row-center;
+}
+
+@mixin hero-image-info{
+  padding:0.3rem;
+  position:absolute;
+  top: 150px;
+  right:15px;
+  text-align:right;
+  color: #fff;
+}
+
+@mixin hero-image-p{
+  font-size: 3rem;
+  font-family: $fontTitle;
+  font-weight: bold;
+}
+
+@mixin styles-button{
+  font-size: 16px;
+    padding: 15px 45px;
+    margin: 20px 0px;
+    background-color:$colorIcon;
+    border: none;
+    border-radius: 15px;
+    color: $colorWhite;
+    &:hover{
+      background-color:darken($colorIcon, 5%)
+    }
+}
