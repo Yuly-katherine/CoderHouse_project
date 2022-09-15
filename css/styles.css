@@ -189,7 +189,7 @@ footer {
 
 /*------------ hero image------------ */
 .imagen-contacto {
-  background: url("../img/contacto/tatacoa.jpg") center/cover;
+  background: url("../img/nosotros/contacto/tatacoa.jpg") center/cover;
   height: 100vh; }
 
 .imagen-contacto__info {
@@ -457,6 +457,11 @@ main {
     margin: 0 auto;
     font-family: "Zilla Slab", serif; }
   .contenido__tienda {
+    padding-top: 60px;
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Zilla Slab", serif; }
+  .contenido__blog {
     padding-top: 60px;
     width: 95%;
     margin: 0 auto;

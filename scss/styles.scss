@@ -8,6 +8,7 @@
 @import"footer";
 @import"contacto";
 @import"blog";
+@import"tienda";
 @import"404";
 /*------------ Reseteo------------ */ 
 
@@ -100,7 +101,12 @@ main{
         width: 95%;
         margin:0 auto;
         font-family: $fontTitle;
-        // padding: 1rem auto;
+    }
+    &__blog{
+        padding-top: 60px;
+        width: 95%;
+        margin: 0 auto;
+        font-family: $fontTitle;
     }
     &__p{
         margin: 0;

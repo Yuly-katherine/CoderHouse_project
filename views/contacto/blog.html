@@ -98,11 +98,12 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle wow animate__animated animate__fadeIn"
                 href="./views/contacto/contacto.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contacto
+                Nosotros
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
                 <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                <li><a class="dropdown-item" href="./tienda.html">Tienda</a></li>
               </ul>
             </li>
           </ul>
@@ -113,200 +114,112 @@
   <div>
     <main>
       <div class="bg-image"></div>
-      <!---------------------- Tienda---------------------->
-      <section class="contenido">
-        <div class="contenido__tienda">
-          <div class="tienda-title">
-            <h2 class="wow animate__animated animate__fadeIn">Tienda</h2>
-            <a href="#" class="btn-cart" data-bs-toggle="modal" data-bs-target="#productos"><i
-                class="bi bi-cart4"></i></a>
-          </div>
-          <div class="cards-tienda">
-            <div class="card">
-              <img src="../../img/contacto/gorro.jpg" class="card-img-top" alt="gorro">
-              <div class="card-body">
-                <h5 class="card-title">Gorra $35.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../img/contacto/toalla.jpg" class="card-img-top" alt="toalla">
-              <div class="card-body">
-                <h5 class="card-title">Toalla $50.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../img/contacto/tula.jpg" class="card-img-top" alt="tula">
-              <div class="card-body">
-                <h5 class="card-title">Tula $50.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../img/contacto/termoColores.jpeg" class="card-img-top" alt="termo">
-              <div class="card-body">
-                <h5 class="card-title">Termo Colores 800ml $55.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../img/contacto/termoStanley.jpeg" class="card-img-top" alt="termo">
-              <div class="card-body">
-                <h5 class="card-title">Termo Stanley 500ml $126.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../img/contacto/termoTermico.jpeg" class="card-img-top" alt="termo">
-              <div class="card-body">
-                <h5 class="card-title">Termo Térmico 400ml $45.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../img/contacto/cacao.jpg" class="card-img-top" alt="barras">
-              <div class="card-body">
-                <h5 class="card-title">Barras de cacao 85% $10.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../img/contacto/miel.jpg" class="card-img-top" alt="miel">
-              <div class="card-body">
-                <h5 class="card-title">Miel de abejas $17.000 COP</h5>
-                <a href="#" class="btn-tienda" data-bs-toggle="modal" data-bs-target="#agregarProducto">Agregar al
-                  carrito</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <!-- Modal agregar producto -->
-        <div class="modal fade" id="agregarProducto" tabindex="-1" aria-labelledby="agregarProductoLabel"
-          aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <img src="../../img/home/logo-remove.png" alt="logo">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <h5 class="modal-title" id="agregarProductoLabel">¡Producto agregado!</h5>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="modal-button" data-bs-dismiss="modal">Save</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Modal producto seleccionados -->
-      <div class="modal fade" id="productos" tabindex="-1" aria-labelledby="productosLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img src="../../img/home/logo-remove.png" alt="logo">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/gorro.jpg" alt="gorro" style="width: 50px; height: 50px">
-                    </th>
-                    <td>$35.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/toalla.jpg" alt="toalla" style="width: 50px; height: 30px">
-                    </th>
-                    <td>$50.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/tula.jpg" alt="tula" style="width: 50px; height: 30px">
-                    </th>
-                    <td>$50.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/termoColores.jpeg" alt="termo" style="width: 50px; height: 30px">
-                    </th>
-                    <td>$55.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/termoStanley.jpeg" alt="termo" style="width: 50px; height: 30px">
-                    </th>
-                    <td>$126.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/termoTermico.jpeg" alt="termo" style="width: 50px; height: 30px">
-                    </th>
-                    <td>$45.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/cacao.jpg" alt="termo" style="width: 50px; height: 30px">
-                    </th>
-                    <td>$10.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <img src="../../img/contacto/miel.jpg" alt="termo" style="width: 50px; height: 30px">
-                    </th>
-                    <td>$17.000</td>
-                    <td><input type="number" style="width: 40px;"></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="modal-button" data-bs-dismiss="modal">Finalizar Compra</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section>
 
+      <!---------------------- Blog---------------------->
+
+      <section class="contenido">
+        <div class="contenido__blog" style="margin:0 auto">
+          <h2 class=" wow animate__animated animate__fadeIn">Blog</h2>
+          <div class="card mt-4" style="width: 100%; height:auto;">
+            <div class="card-body wow animate__animated animate__fadeIn">
+              <h5 class="card-title" style="font-weight: bold;">Guatapé</h5>
+              <p class="card-text" style="text-align: justify;">Eso es lo que debió pensar uno de sus amigos, que le
+                aseguró que, en su tour por
+                Sudamérica, no podía dejar de visitarlo. "Dijo que era uno de sus sitios favoritos del planeta. Una
+                vez que llegué allí ¡entendí por qué! ".
+                Lo primero que me llamó la atención fue, obviamente, lo colorido de los edificios. Era diferente a
+                cualquier cosa que había visto antes. Los colores combinaban perfectamente con el precioso
+                empedrado, y como fotógrafa, me di cuenta de que sería un lugar perfecto para tomar instantáneas. De
+                hecho, cada esquina que doblaba era una nueva y alucinante foto esperando a que apretara el
+                disparador.</p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 100%; height:auto;">
+            <div class="card-body wow animate__animated animate__fadeIn">
+              <h5 class="card-title" style="font-weight: bold;">¿Es seguro viajar a Colombia? Las respuestas a todas
+                tus dudas</h5>
+              <p class="card-text" style="text-align: justify;">Los primeros días durante mi ruta por Colombia la
+                sensación fue extraña. Estaba
+                conociendo lugares alucinantes y no sucedía nada malo a mi alrededor. Al contrario, todo amabilidad
+                y buena vibra. Sin embargo, no podía evitar estar siempre alerta. ¿Será este lugar peligroso? ¿Me
+                están mirando a mí, al móvil, a mi cámara?. Paranoia total.
+
+                La cuestión es que Colombia ha sufrido tanto (tantísimo) que toda precaución es poca. Los
+                colombianos quieren proteger al turista a toda costa (a veces en exceso) con un montón de consejos,
+                recomendaciones y alertas. Vale. Entonces, ¿me puede pasar algo en Colombia?. Por supuesto que sí,
+                en Madrid, París y Londres también. Pero este precioso país tiene algunas particularidades que es
+                preciso señalar. Colombia, un país marcado por la violencia,Es realmente difícil entender qué es lo
+                que ha llevado al pueblo colombiano a una situación tan grave como la que han vivido en las últimas
+                décadas. Me lo explicaron y escuché diferentes puntos de vista. Pero, aún así, resulta complicado
+                comprender el intrincado de violencia y terror inflingido por narcotraficantes, guerrilleros,
+                paramilitares y un montón de actores que no han hecho más que complicar la situación. Llegaron hasta
+                extremos insospechados.
+
+                Actualmente, están renaciendo de sus cenizas. Se encuentran en pleno proceso de paz entre el
+                Gobierno y las guerrillas más importantes. No me voy a meter en temas que no me corresponden, pero
+                es evidente que les queda un largo camino por delante. Aún así, lo que está más que claro es que los
+                colombianos quieren la paz. </p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 100%; height:auto;">
+            <div class="card-body wow animate__animated animate__fadeIn">
+              <h5 class="card-title" style="font-weight: bold;">Qué ver en Colombia</h5>
+              <p class="card-text" style="text-align: justify;">La riqueza natural, cultural y patrimonial de
+                Colombia es impresionante. Grandes ciudades, destinos de playa, montaña, selva y encantadores
+                pueblos de mil colores. ¡Este país lo tiene todo! (o casi todo) Por ello, hoy te traigo un artículo
+                muy completo con los principales destinos que ver en Colombia. </p>
+              <p>
+                <b>Cartagena de Indias:</b>¡Una maravillosa locura! Esta frase resume mi opinión y mi experiencia en
+                la hermosa ciudad colonial de Cartagena de Indias, la más bonita y mejor conservada de América. Una
+                urbe exquisita en la que dejarse llevar sin rumbo por la belleza de sus coloridas calles es casi una
+                asignatura obligatoria.
+              </p>
+              <p>
+                <b>Santa Marta y el Tayrona:</b> Una ciudad colonial con mucho encanto y, además, punto perfecto
+                para organizar la excursión a uno de los lugares más bellos que ver en Colombia, el Parque Nacional
+                Natural Tayrona. Te lo prometo, la ciudad de Santa Marta es una gozada no sólo por su bellísima
+                arquitectura colonial, también por su ambiente callejero y por su espectacular entorno. A mi me
+                gustó muchísimo.
+
+                En cuanto al Parque Tayrona, se puede visitar de dos maneras, o bien haciendo noche allí mismo y
+                disfrutándolo con calma o bien a través de excursiones organizadas (o por libre) desde San Marta de
+                ida y vuelta en el mismo día.
+              </p>
+              <p>
+                <b>Desierto de la Tatacoa:</b> En este increíble desierto los tonos ocres y rojizos tiñen por
+                completo un terreno que se retuerce en formas imposibles. Una verdadera obra de arte de la madre
+                naturaleza que podrás disfrutar a través de miradores y de rutas de senderismo. Además de ser un
+                lugar para flipar con sus formas y colores, el Desierto de la Tatacoa es también un destino ideal
+                para la observación de estrellas.
+              </p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 100%; height:auto;">
+            <div class="card-body wow animate__animated animate__fadeIn">
+              <h5 class="card-title" style="font-weight: bold;">Lo mejor del Eje Cafetero</h5>
+              <p class="card-text" style="text-align: justify;">El Eje Cafetero es una zona muy extensa que, por sí
+                sola, merece dedicarle varios días.¿El plan? Visitar un pueblo con encanto, caminar entre paisajes
+                increíbles y descubrir los secretos del exquisito café de Colombia. Nada mal ¿verdad?.El Eje
+                Cafetero es una región colombiana situada en el este del país, entre Medellín al norte y Cali al
+                sur.Qué ver en Salento: lo mejor del Eje Cafetero
+                Estamos ante el pueblo más famoso y turístico de todo el Eje Cafetero de Colombia. Y no es de
+                extrañar. El pequeño pueblo de Salento parece salido del lienzo de un pintor. Estrechas callejuelas
+                repletas de casitas de colores, música y buen ambiente por todas partes. Todo esto envuelto en un
+                entorno maravilloso. Descubrirás todas las tonalidades de verde rodeando el que para mi es uno de
+                los pueblos más bonitos de Colombia.
+
+                No te llevará mucho tiempo descubrir los lugares de visita imprescindible de Salento. Pero te
+                aconsejo que lo hagas con tranquilidad, que lo saborees y disfrutes del momento. Un buen lugar para
+                comenzar es subir hasta los miradores de la parte alta de la localidad: el mirador de Salento y el
+                mirador Alto de la Cruz. Fue justo aquí donde me di cuenta de un detalle. </p>
+              <p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="footer-logo">
+      <div class="footer-logo wow animate__animated animate__fadeIn">
         <img src="../../img/home/logo-remove.png" alt="logo">
       </div>
       <div class="footer-contain">
