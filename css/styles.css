@@ -1,10 +1,11 @@
+@charset "UTF-8";
 .imagen, .imagen-contacto, .bg-image {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center; }
 
-.fecha, .evento, .footer-contain {
+.fecha, .evento, .footer-contain, .nosotros {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,86 +34,7 @@ header {
   font-family: "Zilla Slab", serif;
   font-weight: bold; }
 
-/*------------ Contain------------ */
-.contenido {
-  font-family: "Zilla Slab", serif;
-  padding-top: 40px;
-  width: 90%;
-  margin: auto;
-  background-color: #fff; }
-  .contenido__info {
-    margin: 2rem auto 0 auto;
-    width: 95%; }
-  .contenido__info-text {
-    width: 95%;
-    margin: 0 auto;
-    text-align: justify; }
-    .contenido__info-text h2 {
-      font-family: "Zilla Slab", serif; }
-    .contenido__info-text p {
-      font-family: "Quicksand", sans-serif; }
-  .contenido__info-card {
-    border: 1px gray solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.29);
-    padding: 20px;
-    margin-top: 20px;
-    font-family: "Quicksand", sans-serif; }
-    .contenido__info-card h2 {
-      font-family: "Zilla Slab", serif; }
-  .contenido__viajes {
-    width: 95%;
-    margin: 0 auto;
-    text-align: justify; }
-    .contenido__viajes h2 {
-      font-family: "Zilla Slab", serif; }
-  .contenido__map {
-    font-family: "Quicksand", sans-serif;
-    width: 100%; }
-    .contenido__map h2 {
-      font-family: "Zilla Slab", serif;
-      width: 95%;
-      margin: 0 auto 2rem auto; }
-  .contenido__condiciones {
-    width: 95%;
-    margin: 0 auto;
-    font-family: "Quicksand", sans-serif; }
-    .contenido__condiciones h2 {
-      font-family: "Zilla Slab", serif; }
-  .contenido__formulario {
-    width: 95%;
-    margin: 0 auto;
-    font-family: "Zilla Slab", serif; }
-  .contenido__p {
-    margin: 0;
-    font-size: "Quicksand", sans-serif; }
-  .contenido__imagenes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); }
-    @media (max-width: 1220px) {
-      .contenido__imagenes {
-        grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 950px) {
-      .contenido__imagenes {
-        grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) {
-      .contenido__imagenes {
-        grid-template-columns: 1fr; } }
-    .contenido__imagenes img {
-      border: 2px solid #000;
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 40px;
-      height: 200px;
-      width: 200px;
-      object-fit: cover;
-      object-position: center; }
-      @media (max-width: 640px) {
-        .contenido__imagenes img {
-          justify-self: center;
-          height: 300px;
-          width: 300px; } }
-
+/*------------ estilos la programación de los proximos meses ------------ */
 .card__item {
   display: flex;
   font-family: "Quicksand", sans-serif;
@@ -137,6 +59,7 @@ header {
     font-weight: bold;
     align-self: flex-start; }
 
+/*------------ estilos para el acordion ------------ */
 .accordion-button:not(.collapsed) {
   color: #000;
   background-color: #fff;
@@ -148,6 +71,33 @@ header {
 .accordion-flush .accordion-item .accordion-button {
   font-family: "Zilla Slab", serif;
   font-size: 1.2rem; }
+
+/*------------  botón Whatsapp------------ */
+.wsp-button {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  position: fixed;
+  z-index: 999;
+  bottom: 1vw;
+  right: 2vw;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  text-align: center; }
+  @media (max-width: 640px) {
+    .wsp-button {
+      width: 3rem;
+      height: 3rem; } }
+  .wsp-button:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #21bd5c; }
+  .wsp-button i {
+    font-size: 35px; }
+    @media (max-width: 640px) {
+      .wsp-button i {
+        font-size: 32px; } }
 
 header {
   position: fixed;
@@ -257,10 +207,7 @@ footer {
 
 /*------------ Formulario------------ */
 .nosotros {
-  font-family: "Quicksand", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  font-family: "Quicksand", sans-serif; }
   .nosotros__info {
     display: flex;
     flex-direction: column;
@@ -290,6 +237,94 @@ footer {
 .required {
   color: #fa3e3e;
   margin-left: 2px; }
+
+/*------------ productos tienda----------- */
+.tienda-title {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.btn-cart {
+  border-radius: 50%;
+  background-color: #198754;
+  color: #fff;
+  padding: 10px; }
+  .btn-cart i {
+    font-size: 22px; }
+  .btn-cart:hover {
+    color: #fff; }
+
+.cards-tienda {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 1rem;
+  justify-items: center;
+  padding-bottom: 2rem; }
+  @media (max-width: 1410px) {
+    .cards-tienda {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 1060px) {
+    .cards-tienda {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 700px) {
+    .cards-tienda {
+      grid-template-columns: 1fr; } }
+
+.card {
+  width: 18rem;
+  height: 28rem; }
+  @media (max-width: 350px) {
+    .card {
+      width: auto; } }
+
+.card-img-top {
+  width: 100%;
+  height: 250px; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif; }
+
+.btn-tienda {
+  font-size: 16px;
+  padding: 15px 45px;
+  margin: 20px 0px;
+  background-color: #198754;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  text-decoration: none; }
+  .btn-tienda:hover {
+    background-color: #157147; }
+  .btn-tienda:hover {
+    color: #fff; }
+
+/*------------ modales----------- */
+.modal-content {
+  font-family: "Quicksand", sans-serif; }
+
+.modal-header img {
+  height: 40px; }
+
+.modal-title {
+  font-weight: bold; }
+
+.modal-button {
+  background-color: #198754;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px; }
+  .modal-button:hover {
+    background-color: #157147; }
+
+/*------------ tabla productos----------- */
+.table > :not(caption) > * > * {
+  text-align: center; }
 
 .page-not-found {
   width: 50%;
@@ -372,6 +407,91 @@ footer {
 main {
   position: relative; }
 
+.contenido {
+  font-family: "Zilla Slab", serif;
+  padding-top: 40px;
+  width: 90%;
+  margin: auto;
+  background-color: #fff; }
+  .contenido__info {
+    margin: 2rem auto 0 auto;
+    width: 95%; }
+  .contenido__info-text {
+    width: 95%;
+    margin: 0 auto;
+    text-align: justify; }
+    .contenido__info-text h2 {
+      font-family: "Zilla Slab", serif; }
+    .contenido__info-text p {
+      font-family: "Quicksand", sans-serif; }
+  .contenido__info-card {
+    border: 1px gray solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.29);
+    padding: 20px;
+    margin-top: 20px;
+    font-family: "Quicksand", sans-serif; }
+    .contenido__info-card h2 {
+      font-family: "Zilla Slab", serif; }
+  .contenido__viajes {
+    width: 95%;
+    margin: 0 auto;
+    text-align: justify; }
+    .contenido__viajes h2 {
+      font-family: "Zilla Slab", serif; }
+  .contenido__map {
+    font-family: "Quicksand", sans-serif;
+    width: 100%; }
+    .contenido__map h2 {
+      font-family: "Zilla Slab", serif;
+      width: 95%;
+      margin: 0 auto 2rem auto; }
+  .contenido__condiciones {
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif; }
+    .contenido__condiciones h2 {
+      font-family: "Zilla Slab", serif; }
+  .contenido__formulario {
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Zilla Slab", serif; }
+  .contenido__tienda {
+    padding-top: 60px;
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Zilla Slab", serif; }
+  .contenido__p {
+    margin: 0;
+    font-size: "Quicksand", sans-serif; }
+  .contenido__imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 1220px) {
+      .contenido__imagenes {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 950px) {
+      .contenido__imagenes {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) {
+      .contenido__imagenes {
+        grid-template-columns: 1fr; } }
+    .contenido__imagenes img {
+      border: 2px solid #000;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      object-position: center; }
+      @media (max-width: 640px) {
+        .contenido__imagenes img {
+          justify-self: center;
+          height: 300px;
+          width: 300px; } }
+
+/*------------ Imagén de fondo (para todas las vistas) ------------ */
 .bg-image {
   background: url("../img/home/fondo.jpg") center/cover;
   position: absolute;
@@ -382,6 +502,7 @@ main {
   z-index: -1;
   opacity: 0.2; }
 
+/*------------ información e imagenes de los viajes ------------ */
 .informacion {
   padding-top: 9rem;
   margin: 0 auto;

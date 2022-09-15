@@ -12,103 +12,7 @@
     @include hero-image-p;
 }
 
-/*------------ Contain------------ */   
-
-
-.contenido{
-    font-family: $fontTitle;
-    padding-top:40px;
-    width: 90%;
-    margin: auto;
-    background-color: $colorWhite;
-    &__info{
-        margin:2rem auto 0 auto;
-        width: 95%;
-    }
-
-    &__info-text{
-        width: 95%;
-        margin:0 auto;
-        text-align:justify;
-        h2{
-            font-family: $fontTitle;
-        }
-        p{
-            font-family: $fontLetters;
-        }
-    }
-    &__info-card{
-        border: 1px gray solid;
-        border-radius: 10px;
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.29);
-        padding: 20px;
-        margin-top: 20px;
-        font-family: $fontLetters;
-        h2{
-            font-family: $fontTitle;
-        }
-    }
-    &__viajes{
-        width: 95%;
-        margin:0 auto;
-        text-align:justify;
-        h2{
-            font-family: $fontTitle;
-        }
-    }
-    &__map{
-        font-family: $fontLetters;
-        width: 100%;
-        h2{
-            font-family: $fontTitle;
-            width: 95%;
-            margin: 0 auto 2rem auto;
-        }
-    }
-    &__condiciones{
-        width: 95%;
-        margin:0 auto;
-        font-family: $fontLetters;
-        h2{
-            font-family: $fontTitle;
-        }
-    }
-    &__formulario{
-        width: 95%;
-        margin:0 auto;
-        font-family: $fontTitle;
-    }
-    &__p{
-        margin: 0;
-        font-size: $fontLetters;
-    }
-    &__imagenes{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        @media (max-width: 1220px) {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        @media (max-width: 950px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media (max-width: 640px) {
-            grid-template-columns: 1fr;
-        }
-        img{
-            border: 2px solid #000;
-            margin-left: 10px;
-            margin-top: 10px;
-            margin-bottom: 40px;
-            @include image-box(200px, 200px);
-            @media (max-width: 640px) {
-                justify-self:center;
-                height:300px;
-                width: 300px;
-            }
-        }
-    }
-}  
-
+/*------------ estilos la programación de los proximos meses ------------ */ 
 
 .card__item{
     display: flex;
@@ -143,6 +47,9 @@
     }
  }
 
+ /*------------ estilos para el acordion ------------ */ 
+
+
  .accordion-button:not(.collapsed){
     color: $colorBlack;
     background-color:$colorWhite;
@@ -156,4 +63,35 @@
  .accordion-flush .accordion-item .accordion-button{
     font-family: $fontTitle;
     font-size: 1.2rem;
+ }
+
+ /*------------  botón Whatsapp------------ */ 
+
+ .wsp-button{
+    background-color: #25d366;
+    color: $colorWhite;
+    border: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 1vw;
+    right: 2vw;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    text-align: center;
+    @media (max-width: 640px) {
+        width: 3rem;
+        height: 3rem;
+    }
+    &:hover{
+        text-decoration: none;
+        color: $colorWhite;
+        background-color: darken(#25d366, 5%);
+    }
+    i{
+        font-size: 35px;
+        @media (max-width: 640px) {
+            font-size: 32px;
+        }
+    }
  }

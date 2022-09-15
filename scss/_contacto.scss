@@ -16,9 +16,7 @@
 
 .nosotros{
     font-family: $fontLetters;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+    @extend %flex-col-center;
     &__info{
         display:flex;
         flex-direction: column;
